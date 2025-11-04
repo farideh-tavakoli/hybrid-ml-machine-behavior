@@ -3,9 +3,22 @@
 A hybrid machine learning framework for analyzing industrial IoT data to identify machine behavior patterns, detect underperforming machines, and support predictive maintenance.  
 The approach combines **K-Means clustering** for behavioral segmentation and **SVM-based classification** for recognition of these patterns in new data.
 
-**Run the notebooks on Google Colab:**
-- [Clustering Notebook](https://colab.research.google.com/github/yourusername/machine-behavior-hybrid-ml/blob/main/clustering.ipynb)
-- [Classification Notebook (sub_3)](https://colab.research.google.com/github/yourusername/machine-behavior-hybrid-ml/blob/main/classification_sub_3.ipynb)
+[![Python](https://img.shields.io/badge/Python-3.10-blue?logo=python)]()
+[![scikit-learn](https://img.shields.io/badge/scikit--learn-ML-orange?logo=scikitlearn)]()
+[![pandas](https://img.shields.io/badge/pandas-Data%20Processing-blue?logo=pandas)]()
+[![matplotlib](https://img.shields.io/badge/matplotlib-Visualization-green?logo=plotly)]()
+[![Jupyter](https://img.shields.io/badge/Jupyter-Notebook-orange?logo=jupyter)]()
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+
+
+## Run on Google Colab
+You can directly open and execute the notebooks below in Google Colab without setup:
+
+- [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/farideh-tavakoli/hybrid-ml-machine-behavior/blob/main/clustering.ipynb)  
+  *Clustering Notebook*
+
+- [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/farideh-tavakoli/hybrid-ml-machine-behavior/blob/main/classification_sub_3.ipynb)  
+  *Classification Notebook (sub_3)*
 
 
 
@@ -52,7 +65,6 @@ df = pd.read_csv("path_to_your_new_data.csv")
 
 Perform the same cleaning and filtering steps used during training:
 ```python
-# Columns to keep
 columns_to_keep = [
     'EXE_TotalDuration_min', 'FAIL_TotalDuration_min',
     'READY_TotalDuration_min', 'POWER_OFF_TotalDuration_min',
@@ -66,7 +78,6 @@ columns_to_keep = [
 ]
 
 
-# Impute NULLs in numeric columns with 0
 numeric_cols = [
     'EXE_TotalDuration_min', 'FAIL_TotalDuration_min', 'READY_TotalDuration_min', 'POWER_OFF_TotalDuration_min',
     'N_Change_EXE_READY', 'N_Change_EXE_FAIL', 'N_Change_EXE_POWER_OFF',
@@ -164,12 +175,9 @@ cd machine-behavior-hybrid-ml
 pip install -r requirements.txt
 ```
 
+
 ## Author
 
-Developed by **[Farideh Tavakoli](https://github.com/farideh-tavakoli)** 
-
-[farideh.tavakoli@studio.unibo.it](mailto:farideh.tavakoli@studio.unibo.it)  
-
-
-If you use this project or build upon it, please consider citing or referencing the repository.  
-Contributions, suggestions, and issues are always welcome!
+**Farideh Tavakoli**  
+[![GitHub](https://img.shields.io/badge/GitHub-farideh--tavakoli-black?logo=github)](https://github.com/farideh-tavakoli)  
+📧 [farideh.tavakoli@studio.unibo.it](mailto:farideh.tavakoli@studio.unibo.it)
