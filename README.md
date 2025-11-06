@@ -156,10 +156,10 @@ machine-behavior-hybrid-ml/
 ├── dataset/
 │   └── cleaned_dataset.csv   
 │
-├── clustering_output_dbscan
-│                
-├── clustering_output_kmeans             
-│
+├── clustering_output_dbscan            
+├── clustering_output_kmeans
+├── report_hybrid-ml-machine-behavior.pdf
+├── presentation_hybrid-ml-machine-behavior.pdf
 ├── requirements.txt
 ├── README.md         
 └── LICENSE             
