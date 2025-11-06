@@ -170,7 +170,7 @@ machine-behavior-hybrid-ml/
 Clone the repository and install the dependencies:
 
 ```bash
-git clone https://github.com/yourusername/machine-behavior-hybrid-ml.git
+git clone https://github.com/farideh-tavakoli/hybrid-ml-machine-behavior.git
 cd machine-behavior-hybrid-ml
 pip install -r requirements.txt
 ```
